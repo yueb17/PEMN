@@ -165,7 +165,11 @@ different layers.
         <div class="column is-full-width">
 
           <!-- NeRF results: Blender -->
-          <h2 class="title is-3" align='center'>Representative Capacity Exploration on CIFAR10 using ConvMixer and ViT</h2>
+          <h2 class="title is-3" align='center'>Representative Capacity Exploration</h2>
+           Performances of ConvMixer and ViT backbones on CIFAR10 dataset with different model hyperparameters. Y-axis represent the test accuracy and X-axis denotes different network parameter settings. Dense means the model is trained in regular fashion. Mask is the sparse selection strategy.
+One-layer, MP, and RP are our strategies. The decimal after RP means the number of unique
+parameters compared with MP. From Mask to RP 1e-5, the unique values of network decrease.
+Different experimental settings illustrate the representative potential of random weights.
 
           <p align="center">
             <a><img src="figs/_plot_convmixer_d6.svg"  height="200" ></a>
@@ -173,12 +177,6 @@ different layers.
             </br>
             <a><img src="figs/_plot_vit_d6.svg"  height="200" ></a>
             <a><img src="figs/_plot_vit_d8.svg"  height="200" ></a>
-            </br>
-            <a><img src="figs/wrn_40_2_wrn_16_2_tinyimagenet.svg"  height="200" ></a>
-            <a><img src="figs/resnet56_resnet20_tinyimagenet.svg"  height="200" ></a>
-            </br>
-            <a><img src="figs/vgg13_vgg8_tinyimagenet.svg"  height="200" ></a>
-            <a><img src="figs/ResNet50_vgg8_tinyimagenet.svg"  height="200" ></a>
             </br>
           </p>
 
