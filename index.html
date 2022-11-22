@@ -132,11 +132,7 @@
           <a><img src="figs/main_figure_cr.pdf"  height="200" ></a>
         </div>
         <div class="content has-text-justified">
-          We present a proven proposition to precisely answer <i>"What makes a good data augmentation (DA) in knowledge distillation (KD)?"</i>: A good DA should reduce the covariance of the teacher-student cross-entropy.
-          We present a practical metric that only needs the teacher to measure the goodness of a DA in KD: the <b>stddev of teacher’s mean probability</b> (shorted as <b>T. stddev</b>).
-          <mark>Interestingly, T. stddev poses a <u>strong positive correlation</u> (note the p-values are far below <a href="https://www.wikiwand.com/en/Statistical_significance">5%</a>) with student’s test loss (S. test loss) on CIFAR100 and Tiny ImageNet (see the right figure above), despite knowing <u>nothing</u> about the student, implying the goodness of a DA in KD is probably student-invariant.</mark>
-          Based on the theory, we further propose an entropy-based data picking algorithm that can further boost prior SOTA DA scheme (CutMix) in KD, resulting in a new strong DA method, <b>CutMixPick</b>.
-          Finally, we show how the theory can be utilized in practice to harvest considerable performance gains simply by using a stronger DA with prolonged training epochs.
+          
         </div>
       </div>
     </div>
