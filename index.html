@@ -180,8 +180,14 @@ Different experimental settings illustrate the representative potential of rando
             </br>
           </p>
 
-          <h2 class="title is-3" align='center'>Correlation Results on ImageNet100</h2>
-          ImageNet100 is a 100-class subset randomly drawn from the full ImageNet-1K dataset. The correlation turns weaker (compared to CIFAR100 and Tiny ImageNet) generally speaking, due to the fact that ImageNet100 is essentially more challenging than CIFAR100 and Tiny ImageNet. But still, suggested by the p-values, the correlation is fairly strong. This means the effectiveness of our metric can generalize to the standard 224x224 RGB images.
+          <h2 class="title is-3" align='center'>A New Network Compression Paradigm</h2>
+           Compression performance validation on CIFAR10/CIFAR100 datasets on
+ResNet32/ResNet56 backbones. Y-axis denotes the test accuracy. X-axis means the network size
+compression ratio. Different colors represent different network architectures. The straight lines on the
+top are performance of dense model with regular training. Lines with different symbol shapes denote
+different settings. For ResNet, our three points are based on MP, RP 1e-1, and RP 1e-2, respectively.
+This pair of figures show that our proposed paradigm achieves admirable compression performance
+compared with baselines. In very high compression ratios, we can still maintain the test accuracy.
 
           <p align="center">
             <a><img src="figs/resnet34_resnet18_imagenet100.svg"  height="200" ></a>
