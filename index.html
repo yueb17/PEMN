@@ -166,10 +166,7 @@ different layers.
 
           <!-- NeRF results: Blender -->
           <h2 class="title is-3" align='center'>Representative Capacity Exploration</h2>
-           Performances of ConvMixer and ViT backbones on CIFAR10 dataset with different model hyperparameters. Y-axis represent the test accuracy and X-axis denotes different network parameter settings. Dense means the model is trained in regular fashion. Mask is the sparse selection strategy.
-One-layer, MP, and RP are our strategies. The decimal after RP means the number of unique
-parameters compared with MP. From Mask to RP 1e-5, the unique values of network decrease.
-Different experimental settings illustrate the representative potential of random weights.
+           
 
           <p align="center">
             <a><img src="figs/plot_convmixer_d6.svg"  height="100" ></a>
@@ -179,9 +176,18 @@ Different experimental settings illustrate the representative potential of rando
             <a><img src="figs/plot_vit_d8.svg"  height="100" ></a>
             </br>
           </p>
+    Performances of ConvMixer and ViT backbones on CIFAR10 dataset with different model hyperparameters. Y-axis represent the test accuracy and X-axis denotes different network parameter settings. Dense means the model is trained in regular fashion. Mask is the sparse selection strategy.
+One-layer, MP, and RP are our strategies. The decimal after RP means the number of unique
+parameters compared with MP. From Mask to RP 1e-5, the unique values of network decrease.
+Different experimental settings illustrate the representative potential of random weights.
 
           <h2 class="title is-3" align='center'>A New Network Compression Paradigm</h2>
-           Compression performance validation on CIFAR10/CIFAR100 datasets on
+           
+
+          <p align="center">
+            <a><img src="figs/main_figure_cr.svg"  height="200" ></a>
+          </p>
+    Compression performance validation on CIFAR10/CIFAR100 datasets on
 ResNet32/ResNet56 backbones. Y-axis denotes the test accuracy. X-axis means the network size
 compression ratio. Different colors represent different network architectures. The straight lines on the
 top are performance of dense model with regular training. Lines with different symbol shapes denote
@@ -189,22 +195,9 @@ different settings. For ResNet, our three points are based on MP, RP 1e-1, and R
 This pair of figures show that our proposed paradigm achieves admirable compression performance
 compared with baselines. In very high compression ratios, we can still maintain the test accuracy.
 
-          <p align="center">
-            <a><img src="figs/main_figure_cr.svg"  height="200" ></a>
-          </p>
+          
 
-          <h2 class="title is-3" align='center'>Correlation Results on ImageNet</h2>
-          The results on ImageNet are not very much aligned with our expectation, as the correlation between S. test loss and T. stddev below is not statistically significant. We don't know why for now (presumbly think it might be related to the number of classes of the dataset). We consider this as a limitation of this work and shall explore it in the future version.
-          <p align="center">
-            <a><img src="figs/resnet34_resnet18_imagenet.svg"  height="200" ></a>
-          </p>
-
-          <h2 class="title is-3" align='center'>Boosting KD via Stronger KD + More Epochs </br>(CIFAR100 and Tiny ImageNet)</h2>
-          As shown below, compared to the original KD results, we can harvest considerable performance gains simply by using a stronger DA (CutMix and our proposed CutMixPick) with more training epochs.
-          <br /> <br />
-          <p align="center">
-            <a><img src="figs/boosting_kd.svg"  width="700" ></a>
-          </p>
+        
         </div>
       </div>
     </div>
