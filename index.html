@@ -129,8 +129,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <div align='center'>
-          <a><img src="figs/main_figure_cv.pdf"  height="200" ></a>
-          <a><img src="figs/wrn_40_2_wrn_16_2_cifar100.svg"  height="200" ></a>
+          <a><img src="figs/main_figure_cr.pdf"  height="200" ></a>
         </div>
         <div class="content has-text-justified">
           We present a proven proposition to precisely answer <i>"What makes a good data augmentation (DA) in knowledge distillation (KD)?"</i>: A good DA should reduce the covariance of the teacher-student cross-entropy.
@@ -150,7 +149,7 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
-            Knowledge distillation (KD) is a general neural network training approach that uses a teacher to guide a student. Existing works mainly study KD from the network output side (e.g., trying to design a better KD loss function), while few have attempted to understand it from the input side. Especially, its interplay with data augmentation (DA) has not been well understood. In this paper, we ask: Why do some DA schemes (e.g., CutMix) inherently perform much better than others in KD? What makes a “good” DA in KD? Our investigation from a statistical perspective suggests that a good DA scheme should reduce the variance of the teacher’s mean probability, which will eventually lead to a lower generalization gap for the student. Besides the theoretical understanding, we also introduce a new entropy-based data-mixing DA scheme to enhance CutMix. Extensive empirical studies support our claims and demonstrate how we can harvest considerable performance gains simply by using a better DA scheme in knowledge distillation.
+            A deeper network structure generally handles more complicated non-linearity and performs more competitively. Nowadays, advanced network designs often contain a large number of repetitive structures (e.g., Transformer). They empower the network capacity to a new level but also increase the model size inevitably, which is unfriendly to either model restoring or transferring. In this study, we are the first to investigate the representative potential of fixed random weights with limited unique values by learning diverse masks and introduce the Parameter-Efficient Masking Networks (PEMN). It also naturally leads to a new paradigm for model compression to diminish the model size. Concretely, motivated by the repetitive structures in modern neural networks, we utilize one random initialized layer, accompanied with different masks, to convey different feature mappings and represent repetitive network modules. Therefore, the model can be expressed as \textit{one-layer} with a bunch of masks, which significantly reduce the model storage cost. Furthermore, we enhance our strategy by learning masks for a model filled by padding a given random weights vector. In this way, our method can further lower the space complexity, especially for models without many repetitive architectures. We validate the potential of PEMN learning masks on random weights with limited unique values and test its effectiveness for a new compression paradigm based on different network architectures.
           </div>
         </div>
       </div>
