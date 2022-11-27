@@ -1,0 +1,9 @@
+*._.DS_Store*
+*.DS_Store*
+*._*
+*.swp
+*.sh
+*data
+*.csv
+*saved_models
+*__pycache__
