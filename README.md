@@ -6,4 +6,7 @@ This repository is for our NeurIPS'22 paper:
 
 PEMN explores the representative potential of random initialized parameters with limited unique values by learning diverse masks to deliver different feature mappings. We propose to use three parameter-efficient strategies: One-layer, Max-layer padding (MP), and Random vector padding (RP) to construct a random network based on a set of given random parameters, which is named as prototype. This exploration promises us a network can be efficiently represented as a small set of random values with a bunch of masks. Inspired by our exploration, we naturally propsoe a new paradigm for network compression for efficient network storage and transfer.
 
-## Code will be available.
+To train ConvMixer with 6-block and 256-dim:
+	code
+
+## Updating
